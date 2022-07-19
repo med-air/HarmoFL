@@ -31,24 +31,17 @@ python utils/setup.py build_ext --inplace
 ```
 
 ### Dataset & Trained Model
-#### Histology Breast Cancer Classification
+#### Classification
 - Please download the histology breast cancer classification datasets [here](https://worksheets.codalab.org/rest/bundles/0xe45e15f39fb54e9d9e919556af67aabe/contents/blob/), extract and put folder 'patches' under `data/camelyon17` directory:
 
-#### Prostate MRI Segmentation
+#### Segmentation
 - Please download the prostate MRI datasets [here](https://liuquande.github.io/SAML/), put the folder `data` under `data/prostate` directory.
-
-#### Histology Nuclei Segmentation
-- Please download the histology nuclei segmentation datasets [here](https://meiruijiang.github.io/MeiruiJiang/NucSeg/), and put under `data/nuclei` directory.
-
-#### Trained Models
-- Please download our trained model [here](https://drive.google.com/file/d/1ivv5Aj8LiAj4DlFC31zlGCuGxQwJBYNN/view?usp=sharing). 
 
 
 ### Train
 `fed_train.py` is the main file to run the federated experiments
 Please using following commands to train a model with federated learning strategy.
 ```bash
-# HarmoFL experiment on three tasks
 bash train.sh
 ```
 Below please find some useful options:
@@ -57,6 +50,5 @@ Below please find some useful options:
 ### Test
 suppose your test model's path is 'model/data/harmofl'
 ```bash
-# HarmoFL test on three tasks
 bash test.sh
 ```
